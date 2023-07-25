@@ -1,0 +1,26 @@
+$color-titulo: green,
+$color-background: white
+
+body
+    background-color: $color-background
+    
+
+/*mixins responsive desing*/
+@mixin mv($medida : 480px)
+    @media (max-width: $medida)
+         @content
+        
+    
+h1 
+    color: $color-titulo 
+    @include mv(760px)
+        color: black
+
+div  
+    h1
+        color: $color-titulo
+        @include mv(760px)
+            color: black
+
+        
+    

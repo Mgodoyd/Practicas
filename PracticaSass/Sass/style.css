@@ -1,0 +1,22 @@
+body {
+  background-color: white;
+}
+
+/*mixins responsive desing*/
+h1 {
+  color: green;
+}
+@media (max-width: 760px) {
+  h1 {
+    color: black;
+  }
+}
+
+div h1 {
+  color: green;
+}
+@media (max-width: 760px) {
+  div h1 {
+    color: black;
+  }
+}/*# sourceMappingURL=style.css.map */
